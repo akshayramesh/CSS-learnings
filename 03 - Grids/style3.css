@@ -1,0 +1,43 @@
+.header-the_shop {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    font-size: x-large;
+}
+
+#logo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-the_shop li {
+    display: inline;
+    padding: 1rem;
+}
+
+.nav-the_shop {
+    justify-content: center;
+    margin: auto;
+}
+
+.search-the_shop {
+    margin-left: auto;
+    font-size: x-large;
+}
+
+input {
+    border-radius: 5%;
+    padding: 0.3rem;
+}
+
+@media(max-width:728px) {
+    .nav-the_shop {
+        display: none;
+    }
+    .header-the_shop {
+        grid-template-columns: 1fr 2fr;
+    }
+    .search-the_shop {
+        grid-column: auto;
+    }
+}

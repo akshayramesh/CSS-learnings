@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+.header1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-left: 2%;
+    align-items: center;
+}
+
+.nav-links1-1 {
+    display: flex;
+    text-align: right;
+    ;
+}
+
+.nav-links1-1 div {
+    padding: 2%;
+}
+
+.nav-links1-2 {
+    display: flex;
+}
+
+.nav-links1-2 div {
+    padding: 2%;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+.banner-1 {
+    grid-column: 2/3;
+    font-family: 'Merriweather', serif;
+    font-size: xx-large;
+    grid-row: 1;
+}
+
+.banner-2 {
+    grid-row: 2;
+    grid-column: 2/3;
+}
+
+button {
+    background-color: rgb(193, 248, 250);
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+
+@media (max-width:728px) {
+    .nav-links1-1,
+    .nav-links1-2 {
+        display: none;
+    }
+    .header1 {
+        grid-template-columns: 1fr;
+    }
+    .banner-1 {
+        grid-column: 1/4;
+    }
+    .banner-2 {
+        grid-column: 1/4;
+    }
+    button {
+        font-size: xx-large;
+    }
+}
